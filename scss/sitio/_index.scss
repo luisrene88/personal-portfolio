@@ -1,0 +1,80 @@
+.welcome{
+	background-size: cover;
+	background-position:center;
+	//background-color : #7BB0A6;
+	margin : auto;
+	padding: auto;
+	font-size: 1em;
+	@include desde(tablet){
+		font-size: 1em;
+	}
+	.me{
+		border-radius:.3em;
+		@include desde(tablet){
+			width: 65%;
+		}
+	}
+}
+#im{
+	font-family:ImperioosaOut;
+	font-size: 1.5em;
+	color : black;
+	@include desde (tablet){
+		font-size: 3em;
+	}
+}
+#imt{
+	font-family : Spelling-Night;
+	line-height : 2em;
+	color : black;
+}
+.main {
+	
+    //min-height: 100%; 
+	//background-image: url("../assets/borrego2.jpg");
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: initial;
+    /* Center the background image */
+    background-position: center;
+    /* Set the background image to no repeat */
+    background-repeat: no-repeat;
+    /* Scale the background image to be as large as possible */
+    //background-size : 222% 220%;
+
+    
+   
+    @include desde(tablet){
+    	background-size: 150% 100%;	
+    }
+    @include desde(web){
+    	background-size: 100% 100%;	
+    }
+}
+
+
+.thanks{
+	color : white;
+	background : transparent;
+	line-height: .5em;
+	a{
+		color : white;
+		&:hover{
+			color: tomato;
+		}
+	}
+}
+
+.header{
+	background-color : white;
+}
+.owl-carousel{
+	@extend .header;
+}
+.burble{
+	background-color : #6698FF;
+	border-radius : 5px;
+	margin-bottom : 5px;
+}
+.image-me{
+	border-radius : 50%;
+}

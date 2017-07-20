@@ -1,0 +1,100 @@
+{% load static compress %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="google-site-verification" content="zmSiJf2K9rdz26f-hG398fofobJra8qofIzM0qDGd-c" />
+	<meta name="author" content="Luis Velazquez">
+	<meta name="keywords" content="mexicali, web developer, web designer, seo, seo basic, freelancer, asp.net, programming expert, django, css, html, scss, python developer, mvc, speak english">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+{% block metablock %}
+
+{% endblock metablock %}
+	<link rel="shortcut icon" href="{%  static 'assets/logo2-min.png' %}">
+	<title>Luis Velazquez - Web Developer</title>
+	{% compress css %}
+	<link rel="stylesheet" href="{% static 'css/ed-grid.css' %}">
+	{% endcompress %}
+	{% block extracss %}
+	    
+	{% endblock extracss %}
+</head>
+
+
+<body class="">
+<div id="main" class="full">
+<nav>
+	<div class="ed-container">
+		<div class="ed-item">
+			<img src="{% static 'assets/logo2-min.png' %}" class="logo-bar" width="75px;" alt="">
+			<a id="mostrar-menu" class="icon-menu"></a>
+			<ul class="ed-menu tablet-horizontal">
+				<li><a href="{% url 'index' %}" {% if "/" == request.path %}
+                                    class="active"
+                            {% endif %} title="">Home</a></li>
+				<li><a href="{% url 'portfolio' %}" {% if "/portfolio/" == request.path %}
+                                    class="active"
+                            {% endif %} title="">Portfolio</a></li>
+                <li><a href="{% url 'aboutme' %}" {% if "/aboutme/" == request.path %}
+                                    class="active"
+                            {% endif %} title="">About Me</a></li>
+			</ul>	
+		</div>
+		
+	</div>
+</nav>
+
+
+	{% block content %}
+	
+	{% endblock content %}
+		
+	
+</div>
+<footer>
+<div class="ed-container">
+	<div class="ed-item main-center cross-center">
+		<ul class="social">
+			<li><a href="https://www.facebook.com/luisrene88" target="_blank" title="Facebook">
+				<span class="icon-facebook espacio"></span>
+			</a></li>
+			<li><a href="https://twitter.com/luisrene88" target="_blank" title="Twitter">
+				<span class="icon-twitter espacio"></span>
+				</a></li>
+			<li><a href="https://instagram.com/luisrene88" target="_blank" title="Instagram">
+				<span class="icon-instagram espacio"></span>
+				</a></li>
+			<li><a href="https://github.com/luisrene88?tab=repositories" target="_blank" title="Instagram">
+				<span class="icon-github espacio"></span>
+				</a></li>
+			<li><a href="https://mx.linkedin.com/in/luisrene88" target="_blank" title="Instagram">
+				<span class="icon-linkedin espacio"></span>
+				</a></li>
+			
+		</ul>
+	</div>
+		
+</div>
+{% block extrafooter %}
+    
+{% endblock extrafooter %}
+
+
+	{% compress js %}
+	<script src="{% static 'jquery.min.js' %}" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf-8">
+		  $(document).ready(function(){
+		      $('#mostrar-menu').click(function(){
+		      	$(this).next().slideToggle();
+		      })
+		  });
+	</script>
+	{% endcompress %}
+	{% block extrajs %}
+	    
+	{% endblock extrajs %}
+</footer>
+
+</body>
+</html>

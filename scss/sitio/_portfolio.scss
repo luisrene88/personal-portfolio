@@ -1,0 +1,50 @@
+.elemento{
+	cursor: pointer;
+	margin-bottom : .5em;
+	&__titulo{
+		font-size: 1.2em;
+		font-weight: bold;
+		color: block;
+		
+	}
+	&__imagen{
+		//min-width : 150px;
+		min-height: 210px;
+		//height: 350px;
+	}
+	&:hover{
+			.elemento__titulo{
+				color : $template-color;
+			}
+	}
+}
+.bodyfull{
+	//max-width : 600px;
+	max-height : 300px;
+	overflow : scroll;
+}
+.dialog--jss-0-0{
+	@include desde(tablet){
+		width:600px;
+	}
+}
+.contenedor-modal{
+	width:92vw;
+	min-height : 500px;
+	@include desde (tablet){
+		width:600px;
+	}
+	@include desde (web){
+		width:600px;
+	}
+	@include desde (hd){
+		width:700px;
+	}
+}
+.contenedor-gallery{
+	max-width : 600px;
+	//max-height : 500px;
+	@include desde (hd){
+		max-width:700px;
+	}
+}

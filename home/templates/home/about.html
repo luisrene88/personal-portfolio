@@ -1,0 +1,314 @@
+{% extends "layout.html" %}
+{% load i18n static compress %}
+{% block metablock %}
+        <meta name="description" content="Read about me, check my resume online and decide work with me">    
+{% endblock metablock %}
+{% block extracss %}
+{% compress css %}
+    <link rel="stylesheet" type="text/css" href='{% static "flaticon/flaticon.css" %}'>
+{% endcompress %}
+<style type="text/css" media="screen">
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before{
+	font-size : 40px;
+
+}
+</style>
+{% endblock extracss %}
+{% block content %}
+
+<div class="ed-container container">
+	<div class="ed-item tablet-45 web-35 hd-30 left-panel">
+		<div class="yo">
+			<img class="yo__imagen" src="{% static 'assets/yo.jpg' %}" alt="">
+			<span class="yo__nombre">Luis Rene</span>
+			<span class="yo__apellido">Velazquez</span>
+			<span class="yo__profesion">I.T Engineer</span>
+		</div>
+		<div class="perfil">
+			<span class="flaticon-avatar center"></span>
+			<span class="perfil__titulo">
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+				{% trans "Profile" %}
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+			</span>
+			<p class="perfil__descripcion">
+I am a creative developer, always looking for knowledge to improve my skills, be more productive, where they talk by me, as a professional, as a person who can make the plus of a solution, also my understand of teamwork as part of a big machine makes me ideal for  projects.
+			</p>
+		</div>
+		<div class="contacto">
+			<span class="flaticon-phone-call center"></span>
+			<span class="contacto__titulo">
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+				Contact me
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+			</span>
+			<span class="icon-telefono espacio contacto__forma">(686) 327 3132</span>
+			<span class="icon-correo espacio contacto__forma">luisd162000@yahoo.com.mx</span>
+		</div>
+		<div class="pskills">
+		<span class="flaticon-tactics-1 center"></span>
+			<span class="pskills__titulo">
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp</span>
+				Personal Skills
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp</span>
+			</span>
+			<div class="pskills__container justify center">
+				<div class="pskills__container__skill">Creative</div>
+				<div class="pskills__container__skill">Autonomous</div>
+				<div class="pskills__container__skill">Respectful</div>
+				<div class="pskills__container__skill">Responsibility</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="ed-item tablet-55 web-65 hd-70 right-panel">
+		<div class="educacion">
+			<span class="flaticon-podium center"></span>
+			<span class="educacion__titulo">
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+				Education
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+			</span>
+			</div>
+			<div class="educacion__container">
+			<ul>
+				<li>
+					<div class="educacion__container__nivel">
+						<div>
+							<span class="educacion__container__nivel__titulo">Bachelors degree</span>&nbsp
+							<span>/ SEP 2011 - DIC 2014 </span>
+						</div>
+						<div>
+							<span class="educacion__container__nivel__descripcion">Universidad Politecnica de Baja California :</span>&nbsp
+							<span>Information Technology Engineer</span>	
+						</div>
+							
+					</div>
+					
+				</li>
+				<li>
+					<div class="educacion__container__nivel">
+						<div>
+							<span class="educacion__container__nivel__titulo">Trunk degree</span>&nbsp
+							<span>/ JUL 2007 - DIC 2010 </span>
+						</div>
+						<div>
+							<span class="educacion__container__nivel__descripcion">Instituto Tecnologico de Mexicali :</span>&nbsp
+							<span>Computer System Engineer</span>	
+						</div>
+						
+					</div>
+					
+				</li>
+			</ul>
+			</div>
+		<div class="educacion">
+			<span class="flaticon-briefcase center"></span>
+			<span class="educacion__titulo">
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+				Work Experience
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+			</span>
+			<div class="educacion__container">
+			<ul>
+				<li>
+					<div class="educacion__container__nivel">
+						<div>
+							<span class="educacion__container__nivel__titulo">FREELANCER /</span>&nbsp
+							<span> FEB 2016 - CURRENT </span>
+						</div>
+						<div>
+							<span class="educacion__container__nivel__descripcion">Web Developer :</span>&nbsp
+							<span>Almost all aspects of web developer are covered by myself, analysis requirements, database, backend / frontend, deployment, design, etc.</span>	
+						</div>
+						
+					</div>
+					
+				</li>
+				<li>
+					<div class="educacion__container__nivel">
+						<div>
+							<span class="educacion__container__nivel__titulo">Paradigma tec /</span>&nbsp
+							<span> JUL 2014 - MARCH 2016 </span>
+						</div>
+						<div>
+							<span class="educacion__container__nivel__descripcion">Programmer of Help Desk :</span>&nbsp
+							<span>As developer of help desk, have to fix production issues on the moment, also this position include develop new modules for the all productions systems, also  cover roles like team leader,  trainer of new coworkers, project manager.</span>	
+						</div>
+						
+					</div>
+					
+				</li>
+			</ul>
+			</div>
+		</div>
+
+		<div class="profesional">
+			<span class="flaticon-productivity center"></span>
+			<span class="profesional__titulo">
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp</span>
+				Professional skills
+				<span class="linea">&nbsp&nbsp&nbsp&nbsp</span>
+			</span>
+			<div class="profesional__container">
+				<div class="ed-container justify">
+					<div class="ed-item movil-45 profesional__container__skill">
+						
+						<div class="skill__titulo">
+							Asp.Net MVC 	
+						</div>
+						&nbsp
+						<div class="progress">
+							<span>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</span>
+						</div>
+						
+					</div>
+
+					<div class="ed-item movil-45 profesional__container__skill">
+						
+						<div class="skill__titulo">
+							Django 	
+						</div>
+						&nbsp
+						<div class="progress">
+							<span>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</span>
+						</div>
+						
+					</div>
+
+					<div class="ed-item movil-45 profesional__container__skill">
+						
+						<div class="skill__titulo">
+							DevExpress 	
+						</div>
+						&nbsp
+						<div class="progress">
+							<span>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</span>
+						</div>
+						
+					</div>
+
+					<div class="ed-item movil-45 profesional__container__skill">
+						
+						<div class="skill__titulo">
+							KendoUI 	
+						</div>
+						&nbsp
+						<div class="progress">
+							<span>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</span>
+						</div>
+						
+					</div>
+
+					<div class="ed-item movil-45 profesional__container__skill">
+						
+						<div class="skill__titulo">
+							JQuery 	
+						</div>
+						&nbsp
+						<div class="progress">
+							<span>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</span>
+						</div>
+						
+					</div>
+
+					<div class="ed-item movil-45 profesional__container__skill">
+						
+						<div class="skill__titulo">
+							CSS 	
+						</div>
+						&nbsp
+						<div class="progress">
+							<span>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</span>
+						</div>
+						
+					</div>
+
+					<div class="ed-item movil-45 profesional__container__skill">
+						
+						<div class="skill__titulo">
+							Frontend 	
+						</div>
+						&nbsp
+						<div class="progress">
+							<span>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</span>
+						</div>
+						
+					</div>
+					<div class="ed-item movil-45 profesional__container__skill">
+						
+						<div class="skill__titulo">
+							Backend 	
+						</div>
+						&nbsp
+						<div class="progress">
+							<span>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</span>
+						</div>
+						
+					</div>
+					<div class="ed-item movil-45 profesional__container__skill">
+						
+						<div class="skill__titulo">
+							Database 	
+						</div>
+						&nbsp
+						<div class="progress">
+							<span>
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							</span>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+    
+{% endblock content %}
+
+{% block extrajs %}
+    
+{% endblock extrajs %}

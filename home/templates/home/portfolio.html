@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% load static compress %}
+{% block metablock %}
+        <meta name="description" content="Web developer, please take a look to my portfolio">    
+{% endblock metablock %}
+{% block extracss %}
+{% compress css %}
+    <link rel="stylesheet" type="text/css" href={% static "css/image-gallery.css" %}>
+{% endcompress %}
+{% endblock extracss %}
+
+{% block content %}
+    <div id="container" class="container">
+    	
+    </div>
+{% endblock content %}
+
+{% block extrajs %}
+{% compress js %}
+	<script src="{% static 'viewjs/portfolio.js' %}" type="text/javascript" ></script>
+{% endcompress %}
+{% endblock extrajs %}

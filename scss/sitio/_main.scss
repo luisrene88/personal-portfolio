@@ -1,0 +1,95 @@
+body{
+	display:flex;
+	flex-wrap : wrap;
+	//flex-flow : column;
+	min-height: 100vh;
+}
+footer{
+	align-self : flex-end;
+	//background-color: $template-nav-background;
+	width: 100%;
+}	
+.active{
+	background-color: $template-color;
+	color: $template-hover-text;
+	//border-radius:25px;
+}
+nav{
+	//background-color: $template-nav-background;
+	color: $template-color-text;
+	padding-top : 5px;
+	padding-bottom : 5px;
+	width:100%;
+	& li{
+		//text-transform: uppercase;
+		//border-radius:5px;	
+		&  > a:hover{
+			//@extend .active;
+			//background-color : $template-nav-background;
+		}
+	}
+	& a{
+		color: $template-color-text;
+		&:hover{
+			color: $template-color-text;
+		}
+	}
+
+}
+
+#mostrar-menu{
+	background-color:$template-color;
+	color:$template_hover_text;
+	line-height: 2em;
+	font-size:1.7em;
+	padding: 5px;
+	margin: 5px;
+	border-radius:5px;
+	@include desde(tablet){
+		display: none;
+	}
+
+}
+.ed-menu{
+	@include hasta(tablet){
+		display:none;
+		margin-top:10px;
+	}
+	@include desde(tablet){
+		float:right;
+	}
+	& ul{
+		background-color:$template-nav-background;
+		//z-index: 1000;
+	}
+	& ul:hover li{
+		display: block;
+		position: relative;
+
+	}
+	a{
+		//line-height: 2.5em;
+	}
+}
+.social{
+	display:flex;
+	flex-wrap : wrap;
+	list-style:none;
+	align-items : center;
+	padding:0;
+	margin : 0;
+	background-color: $template-nav-background;
+	span{
+		font-size: 1.7em;
+		color: $template-color;
+	}
+}
+.container{
+	margin-top:.3em;
+	
+}
+.logo-bar{
+	@include hasta (tablet){
+		display: none;
+	}
+}

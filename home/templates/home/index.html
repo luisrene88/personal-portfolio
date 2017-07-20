@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% load static compress %}
+{% block metablock %}
+        <meta name="description" content="Web developer and freelancer (backend and frontend) prepared to help you to be more productive on the web">    
+{% endblock metablock %}
+{% block extracss %}
+{% compress css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'owl/owl.carousel.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'owl/owl.theme.css' %}">
+{% endcompress %}
+{% endblock extracss %}
+{% block content %}
+<style>
+.owl-page span{
+    
+    background :white;
+}
+
+</style>
+
+	
+    <div id="imt" class="ed-container">
+        <div class="ed-item">
+            <img src="{% static 'assets/yo.jpg' %}" class="center image-me" width="100px;" alt="Me">
+        </div>
+        <div class="ed-item main-center header">
+            <h1>I am...</h1>
+        </div>
+    </div>
+    <div id="im" class="ed-container owl-carousel">
+    	<div class="ed-item main-center">
+    		Freelancer
+    	</div>
+    	<div class="ed-item main-center">
+    		Web developer
+    	</div>
+    	<div class="ed-item main-center">
+    		Web designer
+    	</div>
+    	<div class="ed-item main-center">
+    		Dedicated
+    	</div>
+    </div>
+    <div class="ed-container justify">
+      
+        <div class="ed-item tablet-30 burble">
+            <h1>The coding art</h1>
+            <p>
+                Maybe you just need a solution, but i can offer you clean code, redeemable for your maintenance, given the option to continue with others developers to maintenance of your solution.
+            </p>    
+        </div>
+        <div class="ed-item tablet-30 burble">
+            <h1>Productivity</h1>
+            <p>
+                The quality of your product or service is equal to how is produced, I will help you to be more productive.
+            </p>
+        </div>
+        <div class="ed-item tablet-30 burble">
+            <h1>Be part of..</h1>
+            <p>
+                I always, always am looking to improve by myself, because my skills make me a good option to make the job and to be better.
+            </p>        
+        </div>
+    </div>
+    <!--<div class="thanks main-center">
+        Photo by :&nbsp <a href="https://www.flickr.com/photos/jose_campoy/" title="Jose A. Campoy">Jose A. Campoy</a>
+    </div>
+    -->
+{% endblock content %}
+
+{% block extrajs %}
+{% compress js %}
+	<script src="{% static 'owl/owl.carousel.min.js' %}" type="text/javascript"></script>
+    <script type="text/javascript" >
+    $(document).ready(function(){
+    	$("#im").owlCarousel({
+    		singleItem:true,
+    		autoPlay:true
+    	});
+        //$('#main').toggleClass("main");
+        //$('#main').css('height',$(window).height());
+
+    });
+    </script>
+{% endcompress %}
+{% endblock extrajs %}
